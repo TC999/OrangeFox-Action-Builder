@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
     inputs:
       MANIFEST_BRANCH:
-        description: 'OrangeFox Manifest Branch'
+        description: 'OrangeFox 分支'
         required: true
         default: '12.1'
         type: choice
@@ -18,23 +18,23 @@ on:
         - 12.1
         - 11.0
       DEVICE_TREE:
-        description: 'OrangeFox Device Tree'
+        description: 'OrangeFox 设备树'
         required: true
         default: 'https://github.com/cd-Crypton/custom_recovery_tree_realme_nashc'
       DEVICE_TREE_BRANCH:
-        description: 'OrangeFox Device Tree Branch'
+        description: 'OrangeFox 设备树分支'
         required: true
         default: 'android-12.1'
       DEVICE_PATH:
-        description: 'Specify your Device Path'
+        description: '设备路径'
         required: true
         default: 'device/realme/nashc'
       DEVICE_NAME:
-        description: 'Specify your Device Codename'
+        description: '设备名'
         required: true
         default: 'nashc'
       BUILD_TARGET:
-        description: 'Specify your Build Target'
+        description: '编译目标'
         required: true
         default: 'recovery'
         type: choice
